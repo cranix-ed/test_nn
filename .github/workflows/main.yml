@@ -81,8 +81,8 @@ jobs:
       - name: Send Reports to n8n AI Agent
         id: security_gate
         run: |
-        # Create empty zap report if it doesn't exist (ZAP scan is disabled)
           [ -f zap-report.json ] || echo '{}' > zap-report.json
+
           jq -n \
             --slurpfile trivy trivy-report.json \
             --slurpfile semgrep semgrep-report.json \
