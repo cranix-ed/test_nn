@@ -5,8 +5,8 @@ on:
     branches: [ "main" ]
 
 env:
-  IMAGE_NAME: devsecops-demo-app
-  APP_URL: http://127.0.0.1:8080
+  # IMAGE_NAME: devsecops-demo-app
+  # APP_URL: http://127.0.0.1:8080
   N8N_WEBHOOK_URL: https://clarke-participate-wines-bunny.trycloudflare.com/webhook/security-scan
 
 jobs:
